@@ -1,0 +1,79 @@
+Begin 
+     prompt "Enter your age" and store it in age
+     if(age >= 18) then
+             Display"Yes you are eligible to vote"
+     Else
+             Display"You cant vote"
+end
+
+Begin 
+     prompt "Enter a value" and store it in num
+     if(age % 2 == 0) then
+             Display"The number is positive"
+     Else
+             Display"The number is Negative"
+End
+
+Begin 
+INITIALIZE Principalamount to 15000
+INITIALIZE Rate to 15
+INITIALIZE Time to 1
+Simpleinterest = (Principalamount*Rate*Time)/100
+     
+             Display Simpleinterest
+  
+End
+
+Begin 
+     prompt "Enter a value" and store it in num
+     if((num % 2 == 0) || (num % 3 == 0) || (num % 5 == 0))
+             Display"The number is divisible"
+     Else
+             Display"The number is not Divisible"
+End
+
+Begin 
+     prompt "Enter a value" and store it in age
+     if (age < 18)
+             Display"You are not eligible for voting"
+     Else if(age > 60)
+             Display"You are a senior citizen"
+     Else if(age>=18 && age <= 60)
+             Display "You are eligible to vote"
+     End if
+End
+
+Begin
+DECLARE Index as INTEGER
+Index=1
+   While(Index <= 5)
+          print(Index)
+          Index += 1
+   End While
+End
+
+Begin
+int num =0;
+for(num=1 to 10)
+    If(num % 2 ==0)
+         Display"number is even"
+     Else
+          Display"Number is odd"
+    End If
+End for
+End
+
+Begin
+num[5] as INTEGER ARRAY
+FOR Index=0 TO 4
+     ACCEPT num[Index]
+END FOR
+
+FOR Index=0 TO 4
+      If((num[Index] % 1 ==0) && (num[Index] % num[Index] == 0)) then
+            DISPLAY num[Index]" is a prime number."
+      Else
+            Display num[Index]" is not a prime number."
+      END If
+END FOR
+END
